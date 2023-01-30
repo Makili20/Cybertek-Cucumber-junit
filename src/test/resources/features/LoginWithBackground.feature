@@ -5,17 +5,19 @@ Feature: Login feature
 
 #this is how you comment in feature file
 
-  Scenario: Librarian login scenario
+  Background: User is on the login page
     Given User is on the login page
+    #Then User sees title is library
+
+  Scenario: Librarian login scenario
     When User logs in as librarian
     Then User should see dashboard
 
   Scenario: Student Login scenario
-    Given User is on the login page
     When User logs in as student
     Then User should see dashboard
 
+@db
   Scenario: Admin Login scenario
-    Given User is on the login page
     When User logs in as admin
     Then User should see dashboard

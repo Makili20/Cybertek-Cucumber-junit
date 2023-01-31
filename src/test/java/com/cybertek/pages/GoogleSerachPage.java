@@ -16,4 +16,7 @@ public class GoogleSerachPage {
 
     @FindBy(linkText = "About")
     public WebElement aboutLink;
+
+    @FindBy(xpath = "//a[@class='pHiOh']")
+    public WebElement footerLinks;
 }

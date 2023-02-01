@@ -51,8 +51,8 @@ public class GoogleStepDefinitions {
     }
 
     @Then("user should see {string} in the google title")
-    public void userShouldSeeInTheGoogleTitle(String searchValue) {
-        String expectedTitle = searchValue + " - Google Search";
+    public void userShouldSeeInTheGoogleTitle(String expectedInTitle) {
+        String expectedTitle = expectedInTitle + " - Google Search";
         String actualTitle = Driver.getDriver().getTitle();
         Assert.assertEquals(actualTitle, expectedTitle);
     }

@@ -12,15 +12,15 @@ public class GasMileageCalcualtorPage {
     }
 
     @FindBy(id = "uscodreading")
-    public WebElement currentID;
+    public WebElement currentOdo;
 
     @FindBy(id="uspodreading")
-    public WebElement prevousID;
+    public WebElement prevousOdo;
 
     @FindBy(id="usgasputin")
     public WebElement gasInput;
 
-    @FindBy(xpath = "//input[@alt='Calculate'])[1]")
+    @FindBy(xpath = "//input[@alt='Calculate'][1]")
     public WebElement calculateButton;
 
     @FindBy(xpath="//b[contains(text(), 'mpg')]")

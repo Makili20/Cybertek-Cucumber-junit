@@ -53,13 +53,13 @@ public class ExcellRead {
         //TODO:2-CREATE A LOGIC THAT PRINTS OUT Adam'S LAST NAME DINAMICALLY
         for (int rowNum = 0; rowNum < usedRows; rowNum++) {
             if (sheet.getRow(rowNum).getCell(0).toString().equals("Adam")) {
-                System.out.println("Adam's last name: " + sheet.getRow(rowNum).getCell(1));
+                System.out.println("Adam's last name : " + sheet.getRow(rowNum).getCell(1));
             }
         }
         //TODO:3-print out king's job-id dinamically
 for(int rowNum=0;rowNum<usedRows;rowNum++){
     if(sheet.getRow(rowNum).getCell(1).toString().equals("King")){
-        System.out.println("King's JOB-ID: "+sheet.getRow(rowNum).getCell(2));
+        System.out.println("King's JOB-ID : "+sheet.getRow(rowNum).getCell(2));
     }
 }
 

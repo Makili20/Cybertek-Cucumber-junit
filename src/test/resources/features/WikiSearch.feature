@@ -8,7 +8,7 @@ Feature: Wikipedia search functionality and verifications
     When User types "Steve Jobs" in the wiki search page
     Then User should see "Steve Jobs" in the wiki title
 
-
+@wiki
   Scenario: Search funcionality header verification
     When User types "Steve Jobs" in the wiki search page
     Then USer should see "Steve Jobs" in the main header

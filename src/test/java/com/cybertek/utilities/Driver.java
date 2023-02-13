@@ -36,7 +36,14 @@ public class Driver {
                         WebDriverManager.firefoxdriver().setup();
                         driver=new FirefoxDriver(new FirefoxOptions().setHeadless(true));
                         break;
-
+                        //for Selenium Grid
+                   // case "chrome-remote":
+                      //  ChromeOptions chromeOptions=new ChromeOptions();
+                       /// try {
+                          //  URL url=new URL("http://100.24.235.239:4444/wd/hub");
+                       // } catch (MalformedURLException e) {
+                        //    throw new RuntimeException(e);
+                       // }
 
 
                 }

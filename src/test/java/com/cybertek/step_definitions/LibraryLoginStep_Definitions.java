@@ -8,7 +8,7 @@ public class LibraryLoginStep_Definitions {
 
     @Given("User is on the login page")
     public void user_is_on_the_login_page() {
-        System.out.println("User is on the login page!");
+
     }
 
 
